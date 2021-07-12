@@ -4,7 +4,7 @@ const { Pool } = pg;
 
 const connection = new Pool({
   user: "bootcamp_role",
-  password: "senha_super_hiper_ultra_secreta_do_role_do_bootcamp",
+  password: "123456",
   host: "localhost",
   port: 5432,
   database: "my_shopping_list"
