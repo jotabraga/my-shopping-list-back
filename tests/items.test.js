@@ -10,6 +10,10 @@ beforeEach(async () => {
     await connection.query("DELETE FROM items");
 });
 
+afterAll(() => {
+    connection.end();
+});
+
 describe("GET /items", () => {
     it("returns status 200", async () => {
         const result = await supertest(app).get("/items");
